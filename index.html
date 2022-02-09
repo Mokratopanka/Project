@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muj Milkrun</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+         <!-- Navbar-->
+        <div class="navbar">
+            <img class="img" src="images/logo/ACN_logo_01-removebg-preview.png" alt="Milkrun Logo">
+                <nav class="navbar_header">   
+                    <ul class="navbar ul">
+                        <li><a class="navbar a" href="planing.html" alt="'selected for delivery">Planning</a></li>
+                        <li><a class="navbar a" href="ManImp.html" alt="Manual input">Manual Input</a></li>
+                        <li><a class="navbar a" href="FollowUP.html" alt="Follow up shipments">Follow up</a></li>
+                        <li><a class="navbar a" href="User" alt="user.html">User Settings</a></li>
+                    </ul>
+                </nav>
+            <img class="img2" src="images/logo/Schiphol_logo_01-removebg-preview.png" alt="Participant Logo">
+        </div>
+
+    <!-- Planning -->
+    <section class="TruckList gridPlan">
+
+            <!-- 1st truck head-->
+
+            <?php include 'php/TruckTable.php'; 
+            ?>
+            
+        <div class="TruckLoad">Truck name 8798
+                <div class="truck-shipments">TruckPolozky 2</div>
+                    <div class=""></div>
+            </div>
+               
+        <div class="TruckLoad">Truck name 3
+            <div class="truck-shipments">TruckPolozky 2 TruckPolozky TruckPolozky TruckPolozky TruckPolozky TruckPolozky TruckPolozky TruckPolozky TruckPolozky TruckPolozky TruckPolozky TruckPolozky TruckPolozky TruckPolozky TruckPolozky TruckPolozky TruckPolozky TruckPolozky TruckPolozky TruckPolozky TruckPolozky TruckPolozky TruckPolozky </div>
+        </div>
+    </section>
+    <br>
+
+    <!-- Filters -->
+<section class="Filter_Section">Filters
+    <div class="Filter_Section">
+        <select>
+            <option name="AWB_Green" id="Filter_AWB_Green">Green</option>
+            <option name="AWB_ARR" id="Filter_AWB_ARR">Arrived</option>
+            <option name="AWB_Blocked" id="Filter_AWB_Block">Blocked</option>
+            <option name="AWB_WarehouseStop" id="Filter_WHS_Stop">Warehouse STOP</option>
+        </select>
+
+        <!-- Filters GHA Locations--> 
+        <select>
+            <option name="GHA_Default" id="GHA_Default">-Defualt-</option>
+            <option name="GHA_Menzies" id="GHA_Menzies">Menzies</option>
+            <option name="GHA_Swissport" id="GHA_Swissport">Swissport</option>
+            <option name="GHA_T9" id="GHA_T9">Swissport T9</option>
+            <option name="GHA_T11" id="GHA_T11">Swissport T11</option>
+        </select>
+        
+        <select>
+            <option name="Filter_All" id="Filter_All">All shipments</option>
+            <option name="Filter_Loose" id="Filter_Loose">Loose shipments</option>
+            <option name="Filter_ULD" id="Filter_ULD">ULD</option>
+            <option name="Filter_Combined" id="Filter_Combined">Combined freight</option>
+        </select>
+    </div>
+</section>
+
+<section>
+    <div class="Fitler_Box_Area">
+        <div class="Filter_Box">
+        <input type="checkbox" id="GHA_Default" name="GHA_Default"
+            checked>
+        <label for="GHA_Default">-Defualt-</label>
+
+        <input type="checkbox" id="GHA_Menzies" name="GHA_Menzies"
+            checked>
+        <label for="GHA_Menzies">Menzies</label>
+
+        <input type="checkbox" id="GHA_Swissport" name="GHA_Swissport"
+            checked>
+        <label for="GHA_Swissport">Swissport</label>
+
+        <input type="checkbox" id="GHA_T9" name="GHA_T9"
+            checked>
+        <label for="GHA_T9">T9</label>
+
+        <input type="checkbox" id="GHA_T11" name="GHA_T11"
+            checked>
+        <label for="GHA_T11">T11</label>
+        </div>
+    </div>
+</section>
+
+<br>
+<br>
+
+    <!-- Selection list -->
+    <section class="Shipment-List">
+        <div class="Shipment-List-Header">
+        <div class="Icon_Att">Status</div>
+        <div class="AWB">AWBnr</div>
+        <div class="AWBAtt">GHA_Handler</div>
+        <div class="AWBAtt">amnout</div>
+        <div class="AWBAtt">weight</div>
+        <div class="AWBAtt">type</div>
+        <div class="AWBAtt">Timer</div>
+        <div class="AWBAtt">empty</div>
+        <div class="Icon_Att">i</div>
+        <div class="AWB">126-87972354</div>
+        <div class="AWBAtt">T11</div>
+        <div class="AWBAtt">55 pcs</div>
+        <div class="AWBAtt">771 kg</div>
+        <div class="AWBAtt">loose</div>
+        <div class="AWBAtt">Timer</div>
+        <div class="AWBAtt">771 kg</div>
+        </div>
+    </section>
+
+
+    <?php include 'php/Selection_list.php'; 
+    ?>
+    
+</body>
+</html>

@@ -1,0 +1,86 @@
+:root {
+    --primary-color: rgb(11, 96, 255);    
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: green;
+}
+
+body {
+    background: var(--primary-color);
+    margin: 1em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}
+
+p {
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+.navbar {
+    background: var(--primary-color);
+    margin: 0.5em;
+    color: white;
+    height: 160 px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    color: white;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    border-bottom: 3px rgb(209, 18, 18) solid;
+}
+
+/* truck list */
+
+.TruckList { 
+    background: rgba(0, 0, 0, 0.658);
+    min-height: 400px;
+    padding: 0.2em;
+}
+
+.TruckLoad {
+    width: 200px;
+    min-height: 400px;
+    background: grey;
+    font-size: 16px;
+}
+
+
+
+/* utils */ 
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 180px;
+    height: 100%;
+}

@@ -1,0 +1,280 @@
+/* colours codes 
+
+9B1D20  ruby red
+3E7CB1  steel blue
+81A4CD  ICEBERG
+EB8258  Mandarin
+1B1B1E  Raisin Black
+EAEAEA platinium
+65AFFF sky blue french
+1A759F
+1E6091
+168AAD
+53A65E
+
+*/
+
+
+:root {
+  --primary-bg-color: #99ccff;
+  --secondary-bg-color: #81A4CD;
+  --font-color-dark: #1B1B1E;
+  --font-color-bright: #F9F8F8;
+  --warning-color: #9B1D20;
+  --border-mark-color: #EB8258;
+  --border-frame-shadow: #EAEAEA;
+
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 1px var(--border-mark-color);
+  -webkit-font-smoothing: antialiased;
+  border: 1px solid black;
+}
+
+body {
+  background: var(--primary-bg-color);
+  font-size: 11px;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-color-dark);
+}
+
+p {
+  font-weight: 400;
+  margin: 1px 0;
+}
+
+.img {
+  height: 65px;
+  width: 153px;
+  margin-left: 29px;
+  margin-top: 4px;
+}
+
+.img2 {
+  height: 75px;
+  }
+
+.navbar {
+  display: grid;
+  grid-template-columns: 2fr 6fr 1fr;
+  background: #b3d9ff;
+  padding: 0.1em;
+  color: var(--font-color-dark);
+  justify-content: center;
+  width: auto;
+}
+.navbar_header{
+  max-width: 498px;
+  margin-left: 254px;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.navbar a {
+  color: var(--font-color-dark);
+  display: block;
+  padding: 4px;
+  margin-left: 49px;
+  font-weight: bold;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  border-bottom: 2px var(--font-color-dark) solid;
+}
+
+/* truck list */
+.TruckList {
+  background: var(--primary-bg-color);
+  min-height: 400px;
+  padding: 0.2em;
+}
+
+.Truck {
+  background-color: var(--secondary-bg-color);
+  width: 320px;
+  min-height: 380px;
+  margin: 10px;
+  height: 100%;
+  font-size: 11px;
+  }
+
+.TruckHeader {
+  display: flex;
+  background-color: var(--secondary-bg-color);
+  width: 320px;
+  height: 35px;
+  padding: 8px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  }
+
+.TruckLoad {
+background-color: var(--secondary-bg-color);
+width: 320px;
+height: 100%;
+text-align: left;
+align-items: center;
+justify-content: center;
+padding: 3px;
+box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s;
+}
+
+.TruckLoad:hover {
+  transform: scale(1.05);
+  z-index: 100;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;  
+}
+
+.gridPlan {
+  display: flex;
+  gap: 5px;
+  align-items: left;
+  padding-top: 12px;
+}
+
+.TruckContent {
+display: grid;
+grid-template-columns: 40px 80px 60px 60px 50px 30px;
+height: 20px;
+align-content: center;
+background-color: white;
+box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s;
+}
+
+.TruckContent:hover {
+  transform: scale(1.05);
+  z-index: 100;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;  
+}
+
+.FWD {
+  background-color: var(--primary-bg-color);
+  text-align: left;
+}
+
+.AWB {
+  text-decoration-color: var(--font-color-dark);
+  font-size: 11px;
+  text-align: left;
+}
+
+.AWBAtt {
+  text-align: right; 
+}
+
+.Icon_Att {
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+/* utils */
+.container {
+  max-width: 1920px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 2px 3px;
+  cursor: pointer;
+  background-color: grey;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-outline {
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--font-color-dark);
+  border: 2px rgb(0, 0, 0);
+  border-radius: 3px;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.flex {
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 60px;
+          height: 100%;
+}
+
+
+.Filter_Section{
+  display: grid;
+  grid-template-columns: 120px 100px 160px 60px;
+  height: 20px;
+  align-content: center;
+  border: 2px black;
+  font-size: 11px;
+}
+
+.Filter_Box_Area {
+  display: grid;
+  grid-auto-columns: auto;
+  background-color: transparent;
+    max-height: 25px;
+  min-width: 150px;
+    max-width: 540px;
+  border: 2px black;
+  gap: 1px;
+  font-size: 11px;
+}
+
+.Filter_Box {
+  display: flex;
+  grid-auto-columns: auto;
+  border: 1px black;
+  gap: 3px;
+  border-radius: 4px;
+  border-color: grey;
+  font-size: 11px;
+}
+
+.Shipment-List {
+  display: grid;
+  grid-template-columns: 60px 80px 50px 50px 50px 50px 50px 50px;
+  background-color: var(--font-color-bright);
+  font-size: small;
+}
+
+.Shipment-List-Header {
+  display: grid;
+  grid-template-columns: 60px 80px 50px 50px 50px 50px 50px 50px;
+  background-color: var(--font-color-bright);
+  font-size: small;
+}
+
+
+/*# sourceMappingURL=main.css.map */
